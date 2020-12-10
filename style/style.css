@@ -25,7 +25,7 @@ header #fundo_com_angulo {
 }
 
 /* fazer o efeito do fundo com angulo */
-.cut {
+header .cut-header {
     background:#fff;
     display: block;
     top: 0; 
@@ -35,9 +35,9 @@ header #fundo_com_angulo {
 }
 
 /* fazer o efeito do fundo com angulo */
-.left {
+header .left-header {
     left: 0;
-    transform: skew(86deg) translateX(-2850px);
+    transform: skew(85deg) translateX(-2280px);
 }
 
 header #fundo_com_angulo .container {
@@ -87,19 +87,24 @@ header .container nav a {
     margin-right: 20px; 
 }
 
-/* seção ajude */
-
-#ajude-section {
-    
+main {
     display: flex;
     justify-content: center;
 
-    
+}
+
+main #main-section {
+    max-width: 920px;    
+}
+
+/* seção ajude */
+
+#ajude-section {  
+    display: flex;
+    justify-content: center;   
 }
 
 #ajude-section #ajude-div {
-    width: 70%;
-    
     display: flex;
     margin-top: 21px;
     border-bottom: 1px solid #707070;
@@ -108,23 +113,27 @@ header .container nav a {
 }
 
 #ajude-section #ajude-div .text-div {
-    
-    width: 60%;
+    width: 520px;
+    max-width: 520px;
     color: #888888;
-    padding-right: 40px;
     text-align: left;
     
 }
 
 #ajude-section #ajude-div .text-div h3 {
     margin-bottom: 30px;
-    
-    
+    font-size: 20px;
+    font-weight: normal;   
+}
+
+#ajude-section #ajude-div .text-div p {
+    font-size: 12px;
+    line-height: 18px;   
 }
     
 #ajude-section #ajude-div .form-div {
-    
-    width: 40%;
+    width: 340px;
+    margin-left: 60px;
     color: #888888;
     
 }
@@ -163,18 +172,16 @@ header .container nav a {
     font-size: 16px;
 }
 
-#selecao-produtos {
-    
+/* seleção produtos */
+#selecao-produtos {  
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
-    
+    align-items: center;   
 }
 
 #selecao-produtos .wrapper {
     background-color: #fff;
-    width: 70%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,14 +271,14 @@ header .container nav a {
     cursor: pointer;
 }
 
+/* seção compartilhe */
+
 #compartilhe-section {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 #compartilhe-section #compartilhe-wrapper {
-    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,7 +312,8 @@ header .container nav a {
 
 #compartilhe-section #compartilhe-wrapper .form-input-div .label-input-div {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;  
+    width: 340px; 
 }
 
 #compartilhe-section #compartilhe-wrapper .form-input-div .label-input-div label {
@@ -340,10 +348,28 @@ header .container nav a {
 }
 
 footer {
+    position: relative;
+    
     background-color: #707070;
     display: flex;
     justify-content: center;
     
+}
+
+/* fazer o efeito do fundo com angulo */
+.cut-footer {
+    background: #fff;
+    display: block;
+    top: 0; 
+    bottom: 0;
+    position: absolute;
+    width: 1350px
+}
+
+/* fazer o efeito do fundo com angulo */
+.left-footer {
+    left: 0;
+    transform: skew(93deg) translateX(-2889px);
 }
 
 footer div p {
